@@ -5,17 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		
 		MyRunnable myRunnable = new MyRunnable();
-		Thread th1 = new Thread(myRunnable);
-		Thread th2 = new Thread(myRunnable);
-		Thread th3 = new Thread(myRunnable);
+		Thread th = new Thread(myRunnable);
 		
-		th1.setPriority(Thread.MIN_PRIORITY);
-		th2.setPriority(Thread.MAX_PRIORITY);
-		th3.setPriority(Thread.MIN_PRIORITY);
-		
-		th1.start();
-		th2.start();
-		th3.start();
+		th.start();
 		
 		try {
 			
