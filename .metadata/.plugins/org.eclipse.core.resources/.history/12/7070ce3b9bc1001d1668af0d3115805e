@@ -24,7 +24,7 @@ public class Main {
 		
 		try {
 			
-			Thread.sleep(500);
+			Thread.sleep(2 * 1000);
 			
 			}catch(InterruptedException e) {
 				

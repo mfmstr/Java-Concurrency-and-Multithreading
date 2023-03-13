@@ -9,7 +9,7 @@ public class Main {
 		Thread th2 = new Thread(myRunnable);
 		Thread th3 = new Thread(myRunnable);
 		
-		th1.setDaemon(true); // Daemon Threads Stops working after main thread is done;
+		th1.setDaemon(true);
 		th2.setDaemon(true);
 		th3.setDaemon(true);
 		
@@ -24,11 +24,13 @@ public class Main {
 		
 		try {
 			
-			Thread.sleep(500);
+			Thread.sleep(2 * 1000);
 			
 			}catch(InterruptedException e) {
 				
 			}
+		
+		System.out.println(Thread.currentThread().getName());
 
 	}
 	
