@@ -21,12 +21,6 @@ public class Main {
 		th1.setDaemon(true);
 		th1.start();
 		
-		try {
-			th1.join(); // .join() method will make other threads wait for current thread to finish working.
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		
 //		try {
 //			
 //			Thread.sleep(500);

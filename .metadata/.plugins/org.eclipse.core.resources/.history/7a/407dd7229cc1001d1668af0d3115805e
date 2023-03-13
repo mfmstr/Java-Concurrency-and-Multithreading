@@ -17,15 +17,10 @@ public class Main {
 //		th2.setPriority(Thread.MAX_PRIORITY);
 //		th3.setPriority(Thread.MIN_PRIORITY);
 		
+		System.out.println("Main thread message");
 		
 		th1.setDaemon(true);
 		th1.start();
-		
-		try {
-			th1.join(); // .join() method will make other threads wait for current thread to finish working.
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 		
 //		try {
 //			
@@ -35,7 +30,7 @@ public class Main {
 //				
 //			}
 		
-		System.out.println("Main thread message");
+		
 		
 	}
 	

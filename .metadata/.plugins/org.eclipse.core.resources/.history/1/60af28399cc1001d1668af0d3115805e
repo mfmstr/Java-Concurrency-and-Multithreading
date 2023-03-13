@@ -22,7 +22,7 @@ public class Main {
 		th1.start();
 		
 		try {
-			th1.join(); // .join() method will make other threads wait for current thread to finish working.
+			th1.join();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
